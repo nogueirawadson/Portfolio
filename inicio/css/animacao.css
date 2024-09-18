@@ -7,7 +7,6 @@
   );
   border-color: rgb(82, 82, 186);
 }
-
 .header .title::after {
   content: "|";
   margin-left: 5px;

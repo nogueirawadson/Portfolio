@@ -1,5 +1,4 @@
 const tiggerAcordeon = document.querySelectorAll('.acordeon .tigger')
-
 tiggerAcordeon.forEach((tigger) => {
   tigger.addEventListener('click', (e) => {
     const acordeon = tigger.parentElement

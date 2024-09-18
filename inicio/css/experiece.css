@@ -21,7 +21,6 @@
   font-weight: 500;
   font-size: 1rem;
 }
-
 .experience li .period::before {
   content: "📑";
   margin-right: 0.8rem;

@@ -23,13 +23,11 @@ function updateProfile(profileData) {
   const email = document.getElementById('profile.email')
   email.innerText = profileData.email
   email.href = `mailto:${profileData.email}`
-
 }
 
 function upadateSoftSkills(profileData) {
   const softSkills = document.getElementById('profile.skills.softSkills')
   softSkills.innerHTML = profileData.skills.softSkills.map(skill => `<li> ${skill} </li>`).join('')
-
 }
 
 function updateHardSkills(profileData) {
