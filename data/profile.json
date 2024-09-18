@@ -1,0 +1,68 @@
+{
+  "name": "Wadson Nogueira",
+  "photo": "https://media.licdn.com/dms/image/v2/D4D03AQFiyoKGsB6L4g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718259673828?e=1732147200&v=beta&t=Hj81_zo2PIzusCg3w9wO99EzcV5wKCebHNqihzkn7ps",
+  "job": "Fullstack Developer Junior",
+  "location": "Corrente - Pi",
+  "formation": "Análise e Des. de Sistemas (CRS)",
+  "phone": "(89) 964393092",
+  "email": "nogueirawadson@outlook.pt",
+  "skills": {
+    "hardSkills": [
+      {
+        "name": "JavaScript",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/nodejs.png"
+      },
+      {
+        "name": "Java",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/java.png"
+      },
+      {
+        "name": "Angular",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/angular.png"
+      },
+      {
+        "name": "Html",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/html.png"
+      },
+      {
+        "name": "Css",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/css.png"
+      },
+      {
+        "name": "Github",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/github.png"
+      }
+    ],
+    "softSkills": [
+      "Organização",
+      "Trabalho em equipe",
+      "Flexibilidade",
+      "Adapitabilidade",
+      "Resolução de Problemas"
+    ]
+  },
+  "languages": [
+    "Português BR",
+    "Inglês (em andamento)"
+    
+  ],
+  "portfolio": [
+    {
+      "name": "Criando uma ApiRest de Produtos (Java) - Dio",
+      "url": "https://github.com/nogueirawadson/restApi-dio",
+      "github": true
+    },
+    {
+      "name": "Criando uma Pokedex (JavaScript) - Dio",
+      "url": "https://github.com/nogueirawadson/pokedex",
+      "github": true
+    }
+  ],
+  "professionalExperience": [
+    {
+      "name": "Em busca de oportunidades na área de Desenvolvimento Web",
+      "period": "",
+      "description": "É um prazer trabalhar em uma área na qual eu escolhi para minha vida profissional"
+    }
+  ]
+}

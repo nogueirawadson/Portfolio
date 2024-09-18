@@ -1,0 +1,51 @@
+html {
+  background-image: radial-gradient(
+    farthest-corner at 100%,
+    rgb(58, 38, 116) 0%,
+    rgb(103, 41, 137) 100%
+  );
+  /** O background gradient não irá se repetir*/
+  width: 100vw;
+  height: 100vh;
+}
+* {
+  /** Os elemnetos se comportarem da mesma forma em termos de caixas*/
+  box-sizing: border-box;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif, bol;
+}
+.main {
+  margin: 2rem 0.9rem 2rem 0.9rem;
+  padding: 0.8rem;
+  border: solid 1px rgba(153, 142, 252, 0.3);
+  border-radius: 1rem;
+  background-image: radial-gradient(
+    farthest-corner at 100%,
+    rgb(123, 6, 111) 0%,
+    #6625c1 100%
+  );
+}
+.main::after,
+.main::before {
+  content: "";
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: contain;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+@media only screen and (min-width: 768px) {
+  .main {
+    max-width: 1024px;
+    margin: 1rem auto;
+  }
+  .main::before,
+  .main::after {
+    width: 70vh;
+    
+  }
+
+  .title {
+    margin-left: auto;
+  }
+}

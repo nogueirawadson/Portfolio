@@ -1,0 +1,133 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background: none;
+  position: relative;
+}
+
+.header::after {
+  content: "●●●";
+  color: #fff;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  top: -1rem;
+  right: 1rem;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem;
+}
+.header .name {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: none;
+  grid-area: photo;
+  text-align: center;
+  color: papayawhip;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  /** margin: 1rem 5rem 0rem 5rem;*/
+}
+
+.header .photo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 1rem auto;
+  border-radius: 5%;
+}
+
+.information p {
+  color: rgb(197, 255, 172);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: Jost;
+  font-weight: 600;
+  margin: 0.9rem;
+  font-size: 0.9rem;
+  background-color: rgba(158, 153, 207, 0.25);
+  border: solid 1px rgb(166, 77, 243, 0.5);
+  border-radius: 5px;
+  padding: 0.6rem 10rem 0rem 0rem;
+  transition: 0.5s;
+}
+.information p a {
+  color: rgb(197, 255, 172);
+}
+a {
+  color: rgb(45, 41, 41);
+  text-decoration: none;
+}
+
+.information p::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.5rem;
+}
+
+.information .job::before {
+  background-image: url("https://img.icons8.com/external-flaticons-flat-flat-icons/40/external-full-stack-computer-programming-flaticons-flat-flat-icons-2.png");
+}
+
+.information .formation::before {
+  background-image: url("https://img.icons8.com/color/40/teaching.png");
+}
+
+.information .location::before {
+  background-image: url("https://img.icons8.com/office/40/visit.png");
+}
+
+.information .email::before {
+  background-image: url("https://img.icons8.com/color/40/apple-mail.png");
+}
+
+.information .phone::before {
+  background-image: url("https://img.icons8.com/fluency/40/name--v1.png");
+}
+
+
+
+/** Quando a tela tiver o max-width de () vai aplicar do valor acima */
+@media only screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    /**
+  flex-direction: row;
+     */
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "photo information";
+  }
+  .header .photo {
+    grid-area: photo;
+
+    padding: 0;
+    width: 250px;
+  }
+
+  .header .name {
+    grid-area: title;
+    text-align: start;
+    width: 200px;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .header .information {
+    grid-area: information;
+  }
+  .header .information {
+    margin-right: 2rem;
+  }
+}
+
