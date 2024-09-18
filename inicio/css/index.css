@@ -1,10 +1,10 @@
 .header {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   background: none;
   position: relative;
+  margin: 0;
 }
 
 .header::after {
@@ -20,12 +20,13 @@
   background-size: contain;
   margin-top: 1rem;
 }
-.header .name {
+.header .title {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   background: none;
   grid-area: photo;
   text-align: center;
+  justify-content: flex-start;
   color: papayawhip;
   margin-left: 3rem;
   margin-right: 3rem;
@@ -34,28 +35,24 @@
 
 .header .photo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 50%;
   margin: 1rem auto;
-  border-radius: 5%;
+  border-radius: 50%;
 }
 .information p {
-  font-size: 1.5rem;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 1rem 1rem 1rem;
-
-  color: rgb(197, 255, 172);
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
+  padding: 0.2rem;
   font-family: Jost;
   font-weight: 600;
-  font-size: 0.9rem;
-  background-color: rgba(158, 153, 207, 0.25);
-  border: solid 1px rgb(166, 77, 243, 0.5);
+  font-size: .8rem;
+  color: rgb(197, 255, 172);
+  background-color: rgba(158, 153, 207, 0.1);
+  border: solid 1px rgb(166, 77, 243, 0.2);
   border-radius: 5px;
-  padding: 0.6rem 10rem 0rem 0rem;
   transition: 0.5s;
 }
 .information p a {
@@ -77,23 +74,23 @@ a {
 }
 
 .information .job::before {
-  background-image: url("https://img.icons8.com/external-flaticons-flat-flat-icons/40/external-full-stack-computer-programming-flaticons-flat-flat-icons-2.png");
+  background-image: url(../assets/icons/developer.svg);
 }
 
 .information .formation::before {
-  background-image: url("https://img.icons8.com/color/40/teaching.png");
+  background-image: url(../assets/icons/formation.svg);
 }
 
 .information .location::before {
-  background-image: url("https://img.icons8.com/office/40/visit.png");
+  background-image: url(../assets/icons/location.svg);
 }
 
 .information .email::before {
-  background-image: url("https://img.icons8.com/color/40/apple-mail.png");
+  background-image: url(../assets/icons/icon.svg);
 }
 
 .information .phone::before {
-  background-image: url("https://img.icons8.com/fluency/40/name--v1.png");
+  background-image: url(../assets/icons/contact.svg);
 }
 
 /** Quando a tela tiver o max-width de () vai aplicar do valor acima */
@@ -104,7 +101,7 @@ a {
      */
     display: grid;
     grid-template-areas:
-      "title title"
+      "photo title"
       "photo information";
   }
   .header .photo {
@@ -127,7 +124,5 @@ a {
     max-width: 210px;
   }
   .header .information {
-    grid-area: information;
-    margin-right: 2rem;
   }
 }

@@ -1,36 +1,38 @@
 .portfolio {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   padding: 0;
+  /**
   margin-left: 3rem;
   margin-bottom: 0rem;
+**/
 }
 .portfolio h3 {
-margin-top: 0;
+  margin-top: 0;
 }
 
 .portfolio li {
-  margin: 0rem 0rem 0rem .5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 0rem 0rem 0.5rem;
   align-items: flex-start;
   list-style: " 🔗";
-  padding: 1rem;
 }
 
 .portfolio li h3 {
-  display: flex;
+  flex-direction: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
+  display: flex;
   color: rgb(204, 227, 248);
   font-size: 1.2rem;
 }
 .portfolio li a {
-  color: rgb(204, 227, 248);
-  display: flex;
-  max-width: 40%;
-  flex-direction: column;
   font-size: 1rem;
   font-weight: 500;
   margin-left: 1rem;
+  color: rgb(204, 227, 248);
   border-left: 5px solid rgb(239, 239, 240);
   border-bottom: 5px solid rgba(150, 136, 255, 0.789);
   border-radius: 100%;
