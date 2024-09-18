@@ -18,7 +18,7 @@
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
-margin-top: 1rem;
+  margin-top: 1rem;
 }
 .header .name {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -40,13 +40,17 @@ margin-top: 1rem;
   border-radius: 5%;
 }
 .information p {
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 1rem 1rem;
+
   color: rgb(197, 255, 172);
   display: flex;
   flex-direction: row;
   align-items: center;
   font-family: Jost;
   font-weight: 600;
-  margin: 0.9rem;
   font-size: 0.9rem;
   background-color: rgba(158, 153, 207, 0.25);
   border: solid 1px rgb(166, 77, 243, 0.5);
@@ -92,13 +96,9 @@ a {
   background-image: url("https://img.icons8.com/fluency/40/name--v1.png");
 }
 
-
-
 /** Quando a tela tiver o max-width de () vai aplicar do valor acima */
 @media only screen and (min-width: 768px) {
   .header {
-    display: flex;
-    flex-wrap: wrap;
     /**
   flex-direction: row;
      */
@@ -121,15 +121,13 @@ a {
     margin-bottom: 0.1rem;
   }
 
-
-    .header .title {
-        grid-area: title;
-        text-align: start;
-        max-width: 210px;
-    }
+  .header .title {
+    grid-area: title;
+    text-align: start;
+    max-width: 210px;
+  }
   .header .information {
-   grid-area: information;
+    grid-area: information;
     margin-right: 2rem;
   }
 }
-
