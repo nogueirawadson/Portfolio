@@ -74,23 +74,23 @@ a {
 }
 
 .information .job::before {
-  background-image: url(..assets/icons/developer.svg);
+  background-image: url(../icons/developer.svg);
 }
 
 .information .formation::before {
-  background-image: url(..assets/icons/formation.svg);
+  background-image: url(../icons/formation.svg);
 }
 
 .information .location::before {
-  background-image: url(..assets/icons/location.svg);
+  background-image: url(../icons/location.svg);
 }
 
 .information .email::before {
-  background-image: url(..assets/icons/icon.svg);
+  background-image: url(../icons/icon.svg);
 }
 
 .information .phone::before {
-  background-image: url(..assets/icons/contact.svg);
+  background-image: url(../icons/contact.svg);
 }
 
 /** Quando a tela tiver o max-width de () vai aplicar do valor acima */
