@@ -4,7 +4,7 @@
   "job": "Fullstack Developer Junior",
   "location": "Corrente - Pi",
   "formation": "Análise e Des. de Sistemas (CRS)",
-  "phone": "(89) 964393092",
+  "phone": "(89) 994393092",
   "email": "nogueirawadson@outlook.pt",
   "skills": {
     "hardSkills": [
@@ -41,11 +41,7 @@
       "Resolução de Problemas"
     ]
   },
-  "languages": [
-    "Português BR",
-    "Inglês (em andamento)"
-    
-  ],
+  "languages": ["Português BR", "Inglês (em andamento)"],
   "portfolio": [
     {
       "name": "Criando uma ApiRest de Produtos (Java) - Dio",
